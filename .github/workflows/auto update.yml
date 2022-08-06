@@ -3,7 +3,7 @@ name: Update configs when pve-kernel release
 on:
   workflow_dispatch:
   schedule:
-    - cron: '55 18 * * *' # Every day
+    - cron: '00 19 * * *' # Every day
 
 jobs:
   check:
@@ -19,7 +19,7 @@ jobs:
     - name: Checkout Sources
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.REPO_TOKEN }}
+        token: ${{ secrets.PVEACTION }}
       
     - name: Initialization environment
       env:
