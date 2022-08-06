@@ -50,7 +50,7 @@ jobs:
       if: steps.update.outputs.status == 'success'
       run: |
         git config --local user.email "79748239+roforest@users.noreply.github.com"
-        git config --local user.name "roforest"
+        git config --local user.name "yangmouren"
         git pull
         git commit -m '${{ steps.update.outputs.version }}' -a
         git push
