@@ -3,7 +3,7 @@ name: Update configs when pve-kernel release
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 18 * * *' # Every day
+    - cron: '55 18 * * *' # Every day
 
 jobs:
   check:
